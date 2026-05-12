@@ -39,7 +39,7 @@ const translations = {
     contact_label_name: '> IDENTIFICADOR',
     contact_label_email: '> ENDEREÇO DE RETORNO',
     contact_label_msg: '> PAYLOAD DA MENSAGEM',
-    contact_placeholder_name: 'Seu nome ou empresa',
+    contact_placeholder_name: 'Mirosmar Oliveira',
     contact_placeholder_email: 'contatomirosmaroliveira@hotmail.com',
     contact_placeholder_msg: 'Descreva como posso te ajudar ou qual é o seu projeto...',
     contact_submit: 'TRANSMITIR MENSAGEM',

@@ -78,9 +78,9 @@ export default function HeroSection() {
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-violet-500 to-cyan-500 opacity-30 blur-xl" />
               <div className="relative w-60 h-72 md:w-72 md:h-80 rounded-3xl overflow-hidden glass-panel border border-border/30">
                 <img
-                  src="/profile.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
+                  alt="Mirosmar Oliveira"
+                  className="w-full h-full object-cover object-top"
                   onError={(e) => (e.target.style.display = 'none')}
                 />
               </div>
