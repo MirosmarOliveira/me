@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Light mode defaults */
+    --background: 210 20% 98%;
+    --foreground: 220 30% 8%;
+    --card: 220 30% 5%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 30% 5%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263 70% 66%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 20% 8%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 15% 50%;
+    --accent: 188 85% 43%;
+    --accent-foreground: 220 30% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 263 70% 66%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 50% 1.5%;
+    --foreground: 210 40% 98%;
+    --card: 220 30% 5%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 30% 5%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263 70% 66%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 20% 8%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 188 85% 43%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 12%;
+    --input: 220 15% 12%;
+    --ring: 263 70% 66%;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(13, 17, 23, 0.6);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  html:not(.dark) .glass-panel {
+    background: rgba(248, 250, 252, 0.65);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+  }
+
+  .text-gradient-violet {
+    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
