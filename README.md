@@ -80,4 +80,3 @@ Siga os passos abaixo para testar e rodar o código na sua máquina:
 
 ---
 
-*Desenvolvido com precisão e lógica de Engenharia de Interfaces.*
