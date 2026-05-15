@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Github, Linkedin, Mail, Terminal, AlertCircle, Loader2 } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, Terminal, AlertCircle, Loader2, FileText } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../lib/LanguageContext';
 
@@ -168,6 +168,7 @@ export default function Contact() {
                   { icon: Github, label: 'GitHub', sub: 'github.com/MirosmarOliveira', href: 'https://github.com/MirosmarOliveira', external: true },
                   { icon: Linkedin, label: 'LinkedIn', sub: 'in/mirosmar-oliveira', href: 'https://www.linkedin.com/in/mirosmar-oliveira-287b9a1b0/', external: true },
                   { icon: Mail, label: 'E-mail', sub: 'contatomirosmaroliveira@hotmail.com', href: 'mailto:contatomirosmaroliveira@hotmail.com', external: false },
+                  { icon: FileText, label: t('contact_cv_label'), sub: t('contact_cv_sub'), href: 'https://drive.google.com/file/d/1U65TNx4iaEN-FkCQg4ROLur2VCaCPRG6/view?usp=sharing', external: true },
                 ].map(({ icon: Icon, label, sub, href, external }) => (
                   <a
                     key={label}

@@ -55,6 +55,8 @@ const translations = {
     contact_lang: 'IDIOMAS',
     contact_lang_val: 'PT-BR · EN',
     contact_channels: '> CANAIS DE COMUNICAÇÃO',
+    contact_cv_label: 'Currículo',
+    contact_cv_sub: 'Visualizar PDF',
   },
   en: {
     nav_home: 'Home',
@@ -105,6 +107,8 @@ const translations = {
     contact_lang: 'LANGUAGES',
     contact_lang_val: 'PT-BR · EN',
     contact_channels: '> COMMUNICATION CHANNELS',
+    contact_cv_label: 'Resume',
+    contact_cv_sub: 'View PDF',
   },
 };
 
